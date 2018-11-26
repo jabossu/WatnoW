@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  height: 100%;
+ }
+
+ .ticket {
+   border-radius: 10px;
+ }
+
+ .ticket-mood-fun {
+   background: #AABD8C;
+ }
+ .ticket-mood-serious {
+  background: #381D2A;
+  color: whitesmoke;
+ }
+ .ticket-mood-proactive {
+  background: #3E6990;
+}
+.ticket-mood-interesting {
+  background: #E9E3B4;
+}
+.ticket-mood-empowering {
+  background: #F39B6D;
+}
+
+
+ .main  { 
+   background: lightgrey;
+ }
