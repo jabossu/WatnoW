@@ -20,6 +20,8 @@
 
  .ticket {
    border-radius: 10px;
+   background: white;
+   padding: 20px;
  }
 
  .ticket-mood-fun {
@@ -39,6 +41,9 @@
   background: #F39B6D;
 }
 
+nav {
+  margin-bottom: 20px;
+}
 
  .main  { 
    background: lightgrey;

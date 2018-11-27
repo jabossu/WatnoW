@@ -1,12 +1,3 @@
 <p id="notice"><%= notice %></p>
-<div class="ticket ticket-mood-<%= @card.mood.downcase %> d-flex justify-content-center py-2">
-<% if @card.content.empty? %>
-  <h1 class="py-4"><%= @card.title %></h1>
-<% else %>
-  <div class="py-4">
-    <h3><%= @card.title %></h3>
-    <p><%= @card.content %></p>
-  </div>
-<%end%>
 
-</div>
+<%= render 'card', card: @card %>
