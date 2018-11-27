@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>WatnoW</title>
     <%= csrf_meta_tags %>
@@ -7,9 +7,61 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Bootstrap 4.1.13 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
   </head>
 
   <body>
-    <%= yield %>
+    <main role="main" class="container-fluid px-0">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm mx-0 navbar-light bg-light">
+        <a class="navbar-brand" href="<%= root_url %>">
+          <img src="/icons/icon-128.png" width="30" height="30" class="d-inline-block align-top" alt="Main icon">
+          WatnoW
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to "Home", root_url, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "About", about_url, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Cards", cards_url, class: "nav-link" %>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main part -->
+      <div class="row mx-0">
+        <div class= "col-10 col-sm-8 col-md-6 col-lg-4 mx-auto px-0">
+          <%= yield %><br/>
+        </div>
+      </div>
+      
+      <div class="row">
+        <%= render "parts/bottom"%>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Empty for now -->
+    </footer>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

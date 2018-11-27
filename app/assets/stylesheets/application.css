@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body {
+  height: 100%;
+ }
+
+ main { 
+   background: #eaeaea;
+   min-height: 100%;
+ }
+
+.row:last-child {
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
+
+ .ticket {
+   border-radius: 10px;
+   background: white;
+   padding: 10px;
+ }
+
+ .ticket-mood-fun {
+   background: #AABD8C;
+ }
+ .ticket-mood-serious {
+  background: #381D2A;
+  color: whitesmoke;
+ }
+ .ticket-mood-proactive {
+  background: #3E6990;
+}
+.ticket-mood-interesting {
+  background: #E9E3B4;
+}
+.ticket-mood-empowering {
+  background: #F39B6D;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+.fab {
+  width: 70px;
+  height: 70px;
+  background-color: #43997F;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #666;
+  transition: all 0.1s ease-in-out;
+
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.fab:hover {
+  box-shadow: 0 6px 14px 0 #666;
+  transform: scale(1.05);
+}
+
+a.fab:hover {
+  text-decoration: none !important;
+  color: ghostwhite !important;
+}

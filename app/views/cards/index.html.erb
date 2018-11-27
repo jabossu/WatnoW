@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cards</h1>
+<div class="ticket">
+  <table class="table table-sm" style="width: 100%">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Mood</th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @cards.each do |card| %>
+        <tr>
+          <td><%= card.mood %></td>
+          <td><%= card.title %></td>
+          <td><%= card.content.truncate(30) %></td>
+          <td><%= link_to 'Show', card %><br>
+          <%= link_to 'Edit', edit_card_path(card) %><br>
+          <%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
