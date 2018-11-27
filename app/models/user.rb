@@ -4,9 +4,14 @@ class User < ApplicationRecord
   MAIL_REGEX=/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d]\-)*\.[a-z]+\z/i
 
   validates :name, presence: true, length: {minimum: 3, maximum: 30}
+
   validates :email, 
     presence: true,
     length: {minimum: 6, maximum: 70},
-    format: { with: MAIL_REGEX },
-    uniqueness: { case_sensitive: false }
+    uniqueness: { case_sensitive: false },
+    format: { with: MAIL_REGEX }
+
+  has_secure_password
+  validates :password, presence: true, length: { minimum: 8, maximum: 255}
+  
 end
