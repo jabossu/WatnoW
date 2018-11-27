@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'pages/allcards'
-  resources :cards
   
+  resources :cards
+  resources :users
+  
+  get 'pages/allcards'
   get 'about' => 'pages#about'
   get 'cards' => 'cards/cards'
   get 'allcards' => 'pages#allcards'
