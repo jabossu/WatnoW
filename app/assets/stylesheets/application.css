@@ -35,6 +35,11 @@
    padding: 10px;
  }
 
+.ticket p {
+  text-align: justify;
+  padding: 10px; 
+  }
+
  .ticket-mood-fun {
    background: #AABD8C;
  }
