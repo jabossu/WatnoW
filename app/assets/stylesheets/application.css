@@ -32,7 +32,7 @@
  .ticket {
    border-radius: 10px;
    background: white;
-   box-shadow: 0px 0px 7px grey;
+   box-shadow: 0px 0px 3px lightgrey;
    padding: 10px;
    min-height: 50vh !important;
  }
@@ -60,6 +60,10 @@
 }
 .ticket-mood-empowering {
   background: #900c3e;
+  color: whitesmoke;
+}
+.ticket-notify {
+  background: #BDD3DE;
   color: whitesmoke;
 }
 

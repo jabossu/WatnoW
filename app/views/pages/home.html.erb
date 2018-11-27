@@ -1,2 +1,13 @@
-<% card = @cards.sample  %>
-  <%= render 'cards/card', card: card %>
+<% if notice.present? %>
+  <p class="alert alert-info"><%= notice %></p>
+<%end%>
+
+<%if @cards.empty?%>
+  <div class="ticket ticket-notify d-flex px-4 align-items-center">
+    <h1>Welcome on WatnoW</h1>
+    <p>Press the "+" to create your first activity card.</p>
+  </div>
+<%else%>
+  <% card = @cards.sample  %>
+    <%= render 'cards/card', card: card %>
+<%end%>

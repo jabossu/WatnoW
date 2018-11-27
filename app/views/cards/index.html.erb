@@ -1,13 +1,15 @@
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+  <p class="alert alert-info"><%= notice %></p>
+<%end%>
 
-<h1>Cards</h1>
+<h1>Card list</h1>
 <div class="ticket">
   <table class="table table-sm" style="width: 100%">
-    <thead>
+    <thead class="thead-light">
       <tr>
-        <th>Title</th>
-        <th>Content</th>
         <th>Mood</th>
+        <th>Title</th>
+        <th>Description</th>
         <th colspan="1"></th>
       </tr>
     </thead>

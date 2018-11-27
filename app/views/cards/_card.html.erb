@@ -1,11 +1,12 @@
 
 <div class="ticket ticket-mood-<%= card.mood.downcase %> d-flex px-4 align-items-center">
+  <div style="height: 100%">
   <% if card.content.empty? %>
     <h1><%= card.title %></h1>
   <% else %>
-    <div>
       <h3><%= card.title %></h3>
       <p><%= card.content %></p>
-    </div>
   <% end %>
+  </div>
 </div> 
+<div class="text-right"><small><%= link_to '<span class="fa fa-trash-alt"> delete</span>'.html_safe, card, method: :delete, data: { confirm: 'Are you sure?' } %></div>
