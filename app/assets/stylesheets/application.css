@@ -32,28 +32,44 @@
  .ticket {
    border-radius: 10px;
    background: white;
+   box-shadow: 0px 0px 3px lightgrey;
    padding: 10px;
+   min-height: 50vh !important;
  }
 
+.ticket p {
+  text-align: justify;
+  padding: 10px; 
+  }
+
  .ticket-mood-fun {
-   background: #AABD8C;
+   background: #ff8f00;
+   color:white;
  }
  .ticket-mood-serious {
-  background: #381D2A;
+  background: #571845;
   color: whitesmoke;
  }
  .ticket-mood-proactive {
   background: #3E6990;
+  color: whitesmoke;
 }
 .ticket-mood-interesting {
-  background: #E9E3B4;
+  background: #59c2a7;
+  color:white;
 }
 .ticket-mood-empowering {
-  background: #F39B6D;
+  background: #900c3e;
+  color: whitesmoke;
+}
+.ticket-notify {
+  background: #BDD3DE;
+  color: whitesmoke;
 }
 
 nav {
   margin-bottom: 20px;
+  box-shadow: 0px 0px 10px grey;
 }
 
 .fab {
@@ -61,7 +77,7 @@ nav {
   height: 70px;
   background-color: #43997F;
   border-radius: 50%;
-  box-shadow: 0 6px 10px 0 #666;
+  box-shadow: 0 6px 10px 0 darkgrey;
   transition: all 0.1s ease-in-out;
 
   font-size: 50px;
