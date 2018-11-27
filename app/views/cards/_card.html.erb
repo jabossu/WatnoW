@@ -1,5 +1,5 @@
 
-<div class="ticket ticket-mood-<%= card.mood.downcase %> d-flex justify-content-center py-2">
+<div class="ticket ticket-mood-<%= card.mood.downcase %> d-flex justify-content-center col align-self-center ">
   <% if card.content.empty? %>
     <h1 class="py-4"><%= card.title %></h1>
   <% else %>
@@ -8,4 +8,4 @@
       <p><%= card.content %></p>
     </div>
   <% end %>
-</div>
+</div> 
