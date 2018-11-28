@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm mx-0 navbar-light bg-light">
+  <a class="navbar-brand" href="<%= root_url %>">
+    <img src="/icons/icon-128.png" width="30" height="30" class="d-inline-block align-top" alt="Main icon">
+    WatnoW
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to "Home", root_url, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_url, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Cards", cards_url, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Users", users_url, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Sign-Up", new_user_url, class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>

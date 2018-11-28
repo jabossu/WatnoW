@@ -23,32 +23,11 @@
     <main role="main" class="container-fluid px-0">
       
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-sm mx-0 navbar-light bg-light">
-        <a class="navbar-brand" href="<%= root_url %>">
-          <img src="/icons/icon-128.png" width="30" height="30" class="d-inline-block align-top" alt="Main icon">
-          WatnoW
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <%= link_to "Home", root_url, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "About", about_url, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Cards", cards_url, class: "nav-link" %>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <%= render "parts/navbar"%>
       <br/>
 
       <!-- Main part -->
-      <div class="row mx-0">
+      <div class="row mx-0"> 
         <div class= "col-10 col-sm-8 col-md-6 col-lg-4 mx-auto px-0">
           <%= yield %><br/>
         </div>
