@@ -2,12 +2,28 @@
   <p class="alert alert-info"><%= notice %></p>
 <%end%>
 
-<%if @cards.empty?%>
-  <div class="ticket ticket-notify d-flex px-4 align-items-center">
-    <h1>Welcome on WatnoW</h1>
-    <p>Press the "+" to create your first activity card.</p>
-  </div>
+<% if logged_in? %>
+  <%if @cards.empty?%>
+    <div class="ticket ticket-notify d-flex px-4 align-items-center">
+      <h1>Get Started !</h1>
+      <p>Press the "+" to create your first activity card.</p>
+    </div>
+  <%else%>
+    <% card = @cards.sample  %>
+      <%= render 'cards/card', card: card %>
+  <%end%>
 <%else%>
-  <% card = @cards.sample  %>
-    <%= render 'cards/card', card: card %>
+  <div class="ticket ticket-notify d-flex px-4 align-items-center">
+    <h3>Welcome on WatnoW</h3>
+    <p>Log-in or Create an account to use this app.
+    <br/>It's easy and free ! go ahead !</p>
+  </div>
+  <div class="row my-3">
+    <div class="col text-center ">
+      <%= link_to "Create an account", new_user_url, class: "btn btn-link btn-small" %>
+    </div>
+    <div class="col text-center">
+      <%= link_to "Log in", login_url, class: "btn btn-primary btn-small" %>
+    </div>
+  </div>
 <%end%>
