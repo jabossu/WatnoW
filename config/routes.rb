@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   get 'pages/allcards'
   get 'about' => 'pages#about'
-  get 'cards' => 'cards/cards'
+  get 'cards' => 'cards#cards'
   get 'allcards' => 'pages#allcards'
 
   get 'signup' => 'users#new'

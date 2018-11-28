@@ -1,0 +1,160 @@
+Run options: --seed 18044
+
+# Running:
+
+F
+
+Failure:
+UsersLoginTest#test_login_with_invalid_information [/home/jack/Git/WatnoW/test/integration/users_login_test.rb:6]:
+expecting <"session/new"> but rendering with <["sessions/new", "parts/_navbar", "parts/_bottom", "layouts/application"]>
+
+bin/rails test test/integration/users_login_test.rb:4
+
+...E
+
+Error:
+CardsControllerTest#test_should_get_edit:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:31
+
+E
+
+Error:
+CardsControllerTest#test_should_update_card:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:36
+
+E
+
+Error:
+CardsControllerTest#test_should_get_index:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:8
+
+E
+
+Error:
+CardsControllerTest#test_should_get_new:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:13
+
+E
+
+Error:
+CardsControllerTest#test_should_show_card:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:26
+
+E
+
+Error:
+CardsControllerTest#test_should_create_card:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:18
+
+E
+
+Error:
+CardsControllerTest#test_should_destroy_card:
+StandardError: No fixture named 'first' found for fixture set 'cards'
+    test/controllers/cards_controller_test.rb:5:in `block in <class:CardsControllerTest>'
+
+bin/rails test test/controllers/cards_controller_test.rb:41
+
+E
+
+Error:
+UsersControllerTest#test_should_create_user:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:18
+
+E
+
+Error:
+UsersControllerTest#test_should_destroy_user:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:41
+
+E
+
+Error:
+UsersControllerTest#test_should_get_index:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:8
+
+E
+
+Error:
+UsersControllerTest#test_should_get_new:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:13
+
+E
+
+Error:
+UsersControllerTest#test_should_show_user:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:26
+
+E
+
+Error:
+UsersControllerTest#test_should_update_user:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:36
+
+E
+
+Error:
+UsersControllerTest#test_should_get_edit:
+StandardError: No fixture named 'first' found for fixture set 'users'
+    test/controllers/users_controller_test.rb:5:in `block in <class:UsersControllerTest>'
+
+bin/rails test test/controllers/users_controller_test.rb:31
+
+E
+
+Error:
+PagesControllerTest#test_should_get_home:
+NameError: undefined local variable or method `pages_home_url' for #<PagesControllerTest:0x0000558c42065f80>
+    test/controllers/pages_controller_test.rb:5:in `block in <class:PagesControllerTest>'
+
+bin/rails test test/controllers/pages_controller_test.rb:4
+
+E
+
+Error:
+PagesControllerTest#test_should_get_about:
+NameError: undefined local variable or method `pages_about_url' for #<PagesControllerTest:0x0000558c41fba720>
+    test/controllers/pages_controller_test.rb:10:in `block in <class:PagesControllerTest>'
+
+bin/rails test test/controllers/pages_controller_test.rb:9
+
+....
+
+Finished in 0.353398s, 67.9122 runs/s, 22.6374 assertions/s.
+24 runs, 8 assertions, 1 failures, 16 errors, 0 skips
