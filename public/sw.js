@@ -1,5 +1,6 @@
 var CACHE_NAME = 'WatnoW-v1';
 var urlsToCache = [
+  '/',
   '/logout'
 ];
 
