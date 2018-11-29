@@ -5,6 +5,7 @@
   "start_url": "/",
   "theme_color": "#673ab6",
   "background_color": "#ffe8e8",
+  "Description" : "A small app to help you when you're bored",
   "icons": [
     {
       "src": "icons/icon-64.png",
