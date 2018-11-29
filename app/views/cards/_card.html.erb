@@ -10,9 +10,9 @@
 </div> 
 <div class="row">
   <div class="col">
-    <div class="text-left text-muted font-weight-bold"><small class="font-italic">1 of <%= current_user.cards.count %> cards</small></div>
+    <div class="text-left"><small><%= link_to "Edit".html_safe, edit_card_path(card) %></small></div>
   </div>
   <div>
-    <div class="text-right"><small><%= link_to '<span class="fa fa-trash-alt"> delete</span>'.html_safe, card, method: :delete, data: { confirm: 'Are you sure?' } %></small></div>
+    <div class="text-right"><small><%= link_to "#{glyph('trash')}delete".html_safe, card, method: :delete, data: { confirm: 'Are you sure?' } %></small></div>
   </div>
 </div>

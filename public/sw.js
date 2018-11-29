@@ -1,8 +1,6 @@
-var CACHE_NAME = 'WatnoW';
+var CACHE_NAME = 'WatnoW-v1';
 var urlsToCache = [
-  '/',
-  '/about',
-  '/login'
+  '/about'
 ];
 
 self.addEventListener('install', function(event) {

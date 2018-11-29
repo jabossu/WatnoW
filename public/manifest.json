@@ -3,7 +3,7 @@
   "short_name": "WatnoW",
   "display": "standalone",
   "start_url": "/",
-  "theme_color": "#673ab6",
+  "theme_color": "#BDD3DE", 
   "background_color": "#ffe8e8",
   "Description" : "A small app to help you when you're bored",
   "icons": [
