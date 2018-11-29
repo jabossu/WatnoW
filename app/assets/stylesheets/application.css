@@ -71,15 +71,16 @@
 .fab {
   width: 70px;
   height: 70px;
+  line-height: 70px !important;
   background-color: #43997F;
   border-radius: 50%;
   box-shadow: 0 6px 10px 0 darkgrey;
   transition: all 0.1s ease-in-out;
 
-  font-size: 65px;
+  font-size: 45px;
   color: white;
   text-align: center;
-  line-height: 70px;
+  vertical-align: middle;
 
   position: fixed;
   right: 40px;

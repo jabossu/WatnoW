@@ -1,1 +1,10 @@
-<a href="/cards/new" class="fab">+</a>
+<% if current_page?(controller: "pages", action: "about") or
+      current_page?(controller: "users", action: "new") or
+      current_page?(controller: "users", action: "create") or
+      current_page?(controller: "sessions", action: "new") %>
+  <% # no fab here %>
+<% elsif !logged_in? %>
+  <%= link_to glyph('sign-in-alt'), login_url, class: "fab" %>
+<%else%>
+  <%= link_to glyph('plus'), new_card_url, class: "fab" %>
+<%end%>

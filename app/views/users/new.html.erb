@@ -2,4 +2,6 @@
 
 <%= render 'form', user: @user %>
 
-<%= link_to 'Back', users_path %>
+<div class="row my-3">
+  <p class="tex-right">Already have an account ? <%= link_to 'Log in !', login_url %></p>
+</div>

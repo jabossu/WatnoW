@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :cards
   resources :users
+  resources :pages
   
   get 'pages/allcards'
   get 'about' => 'pages#about'
