@@ -95,3 +95,8 @@ a.fab:hover {
   text-decoration: none !important;
   color: ghostwhite !important;
 }
+
+.table {
+  padding: 10px;
+  border-radius:15px;
+}

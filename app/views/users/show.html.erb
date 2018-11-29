@@ -1,13 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-
 <div class="ticket ticket-notify d-flex px-4 align-items-center">
   <div style="height: 100%">
     <h3><%= gravatar_for @user, "35x35" %> Hello <%= @user.name %> !</h3>
     <ul>
       <li><%= @user.email %></li>
       <li>registrered on <%= @user.created_at.to_formatted_s(:long) %></li>
-      <li>Logged in : <%= logged_in? %></li>
+      <li>You created <%= pluralize(@user.cards.count, "card") %></li>
     </ul>
   </div>
 </div> 

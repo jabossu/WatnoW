@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm mx-0 navbar-light bg-light shadow-sm">
+<nav class="navbar navbar-expand-sm mx-0 navbar-light bg-light shadow-sm w-100">
   <a class="navbar-brand" href="<%= root_url %>">
     <img src="/icons/icon-128.png" width="30" height="30" class="d-inline-block align-top" alt="Main icon">
     WatnoW
@@ -17,13 +17,13 @@
 
       <% if logged_in? %>
         <li class="nav-item">
-          <%= link_to "#{glyph('scroll')}Cards".html_safe, cards_url, class: "nav-link" %>
+          <%= link_to "#{glyph('scroll')}Cards".html_safe, usercards_url, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "#{glyph('sign-out-alt')}Log out".html_safe, logout_path, method: :delete, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "#{glyph('user')} My profile".html_safe, user_path(current_user), class: "nav-link" %>
+          <%= link_to "#{glyph('user')} Hi #{@current_user.name} !".html_safe, user_path(current_user), class: "nav-link" %>
         </li>
       <% else %>
         <li class="nav-item">

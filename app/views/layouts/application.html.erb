@@ -31,7 +31,9 @@
         <div class= "col-10 col-sm-8 col-md-6 col-lg-4 mx-auto px-0">
           <!-- Flash messages placeholder -->
           <% flash.each do |message_type, message| %>
-            <div class="alert alert-<%= message_type %>"><%= message %></div>
+            <%if message_type != 'notice' %>
+              <div class="alert alert-<%= message_type %>"><%= message %></div>
+            <%end%>
           <%end%>
           <%= yield %><br/>
         </div>

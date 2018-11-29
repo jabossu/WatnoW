@@ -3,9 +3,8 @@
 <%end%>
 
 <h1>Card list</h1>
-<div class="ticket">
-  <table class="table table-sm" style="width: 100%">
-    <thead class="thead-light">
+  <table class="table table-light shadow-sm">
+    <thead style="border: 0px;">
       <tr>
         <th>Mood</th>
         <th>Title</th>
@@ -15,7 +14,7 @@
     </thead>
 
     <tbody>
-      <% @cards.each do |card| %>
+      <% current_user.cards.each do |card| %>
         <tr>
           <td><%= card.mood %></td>
           <td><%= card.title %></td>
@@ -27,4 +26,3 @@
       <% end %>
     </tbody>
   </table>
-</div>

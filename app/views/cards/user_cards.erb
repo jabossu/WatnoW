@@ -1,0 +1,13 @@
+<h1>My cards :</h1><br/>
+<%if current_user.cards.empty?%>
+  <div class="ticket ticket-notify d-flex px-4 align-items-center">
+    <div style="height: 100%">
+      <h3>You dont have any card yet !</h3>
+      <p>Use the geen "<%= glyph("plus") %>" button to create your first card.</p>
+    </div>
+  </div>
+<%else%>
+  <% current_user.cards.each do |card| %>
+    <%= render 'card', card: card %>
+  <% end %>
+<% end %>

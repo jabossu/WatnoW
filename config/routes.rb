@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'cards' => 'cards#cards'
   get 'allcards' => 'pages#allcards'
+  get 'usercards' => 'cards#user_cards'
 
   get 'signup' => 'users#new'
   post 'signup' => 'users#create'
